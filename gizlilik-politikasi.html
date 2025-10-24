@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası | EF Sanal Ofis</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Gizlilik Politikası</h1>
+      <p>Kişisel verilerinizin korunması ve kullanım şekline dair tüm detaylara buradan ulaşabilirsiniz.</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <h4>1. Toplanan Bilgiler</h4>
+    <p>Ad, e-posta, telefon gibi kişisel bilgiler yalnızca sizin onayınızla toplanır...</p>
+
+    <h4>2. Bilgilerin Kullanımı</h4>
+    <p>Toplanan veriler, hizmet kalitemizi artırmak ve sizinle iletişim kurmak amacıyla kullanılır...</p>
+
+    <h4>3. Bilgilerin Saklanması</h4>
+    <p>Tüm veriler güvenli sunucularda saklanır, yasal zorunluluklar dışında paylaşılmaz...</p>
+
+    <h4>4. Üçüncü Taraf Hizmetleri</h4>
+    <p>Google Analytics gibi araçlar yalnızca anonim istatistiksel veri toplar...</p>
+
+    <h4>5. Veri Güvenliği</h4>
+    <p>Veri güvenliği için SSL sertifikaları ve modern güvenlik önlemleri uygulanmaktadır...</p>
+
+    <h4>6. Kullanıcı Hakları</h4>
+    <p>KVKK kapsamında, verilerinize erişme, düzeltme veya silme hakkına sahipsiniz...</p>
+
+    <h4>7. Güncellemeler</h4>
+    <p>Gizlilik politikamız zaman zaman güncellenebilir. Son sürüm web sitemizde yayınlanır.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
+    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+  </script>
+</body>
+</html>

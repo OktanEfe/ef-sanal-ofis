@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çerez Politikası | EF Sanal Ofis</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Çerez Politikası</h1>
+      <p>Web sitemizde kullanılan çerezlerin türleri, amaçları ve yönetim tercihleri hakkında detaylı bilgi.</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <h4>1. Çerez Nedir?</h4>
+    <p>Çerezler, web siteleri tarafından tarayıcınıza kaydedilen küçük veri dosyalarıdır...</p>
+
+    <h4>2. Kullanılan Çerez Türleri</h4>
+    <ul>
+      <li><strong>Zorunlu Çerezler:</strong> Site güvenliği ve temel işlevler için gereklidir.</li>
+      <li><strong>Analitik Çerezler:</strong> Trafik ve performans analizi sağlar.</li>
+      <li><strong>Reklam Çerezleri:</strong> İlgi alanlarınıza göre reklam sunar.</li>
+    </ul>
+
+    <h4>3. Çerezlerin Kullanım Amaçları</h4>
+    <p>EF Sanal Ofis, çerezleri kullanıcı deneyimini iyileştirmek ve performansı ölçmek için kullanır...</p>
+
+    <h4>4. Çerezleri Yönetme</h4>
+    <p>Tarayıcı ayarlarınızdan çerezleri kabul edebilir, reddedebilir veya silebilirsiniz...</p>
+
+    <h4>5. Üçüncü Taraf Çerezleri</h4>
+    <p>Google Analytics gibi üçüncü taraf hizmetler tarafından çerezler kullanılabilir...</p>
+
+    <h4>6. Güncellemeler</h4>
+    <p>EF Sanal Ofis, bu politikayı zaman zaman güncelleyebilir. Değişiklikler yayınlandığı anda geçerli olur.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
+    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+  </script>
+</body>
+</html>

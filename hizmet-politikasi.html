@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hizmet Şartları | EF Sanal Ofis</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Hizmet Şartları</h1>
+      <p>EF Sanal Ofis tarafından sunulan hizmetlerin kullanım koşullarını bu sayfada bulabilirsiniz.</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <h4>1. Hizmet Tanımı</h4>
+    <p>EF Sanal Ofis, işletmelere yasal iş adresi, sanal ofis, toplantı alanı ve sekreterya hizmetleri sağlamaktadır...</p>
+
+    <h4>2. Kullanım Koşulları</h4>
+    <p>Kullanıcı, hizmetleri yalnızca yasal amaçlarla ve sözleşmede belirtilen sınırlar içerisinde kullanacağını taahhüt eder...</p>
+
+    <h4>3. Ücretlendirme ve Ödeme</h4>
+    <p>Hizmet ücretleri, sözleşme başlangıcında belirlenir. Ödemeler periyodik olarak yapılır...</p>
+
+    <h4>4. Sözleşmenin Feshi</h4>
+    <p>Taraflardan biri yükümlülüklerini yerine getirmezse, diğeri sözleşmeyi tek taraflı feshedebilir...</p>
+
+    <h4>5. Sorumluluk Reddi</h4>
+    <p>EF Sanal Ofis, mücbir sebeplerden doğan hizmet kesintilerinden sorumlu tutulamaz...</p>
+
+    <h4>6. Değişiklik Hakkı</h4>
+    <p>EF Sanal Ofis, hizmet şartlarını güncelleme hakkını saklı tutar. Güncellemeler yayınlandığı anda yürürlüğe girer.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
+    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+  </script>
+</body>
+</html>

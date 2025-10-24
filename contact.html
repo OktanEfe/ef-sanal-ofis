@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <title>İletişim | EF Sanal Ofis</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="EF Sanal Ofis iletişim sayfası — bizimle hemen iletişime geçin." name="description">
+
+  <!-- CSS Dosyaları -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/colors/scheme-01.css" rel="stylesheet">
+  <link href="css/coloring.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Preloader -->
+    <div id="preloader"><div class="preloader1"></div></div>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- İçerik -->
+    <div id="content" class="no-bottom no-top">
+      <div id="top"></div>
+
+      <!-- Hero / Başlık -->
+      <section id="subheader" class="text-dark relative" data-bgimage="url(images/background/) center">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="center-y relative text-center z-10 py-20">
+          <div class="container">
+            <h1 class="wow fadeInUp" data-wow-delay=".3s">Bizimle İletişime Geçin</h1>
+            <p class="wow fadeInUp" data-wow-delay=".5s">
+              Soru, teklif ya da iş birliği için bize ulaşın — ekibimiz en kısa sürede dönüş yapar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- İletişim Formu -->
+      <section class="py-20 bg-[#fffdf5]">
+        <div class="container">
+          <div class="row align-items-start">
+            <!-- Form -->
+            <div class="col-lg-8 mb-5">
+              <h3 class="text-dark mb-4">Bize Mesaj Gönderin</h3>
+              <form name="contactForm" id="contact_form" class="form-border" method="post" action="email.php">
+                <div class="field-set mb-3">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Adınız Soyadınız" required>
+                </div>
+
+                <div class="field-set mb-3">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="E-posta Adresiniz" required>
+                </div>
+
+                <div class="field-set mb-3">
+                  <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefon Numaranız">
+                </div>
+
+                <div class="field-set mb-4">
+                  <textarea name="message" id="message" class="form-control" rows="6" placeholder="Mesajınız"></textarea>
+                </div>
+
+                <div class="text-start">
+                  <button type="submit" id="send_message" class="btn-main px-5 py-3">
+                    Gönder
+                  </button>
+                </div>
+              </form>
+              <div id="mail_success" class="success mt-3 text-success">Mesajınız başarıyla gönderildi.</div>
+              <div id="mail_fail" class="error mt-3 text-danger">Bir hata oluştu. Lütfen tekrar deneyin.</div>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="col-lg-4">
+              <div class="p-4 rounded-3 shadow-sm mb-4 bg-white">
+                <h4 class="text-[#ffbe00] mb-3">📍 İstanbul Ofis</h4>
+                <address class="text-dark">
+                  <p><i class="fa fa-map-marker me-2 text-[#ffbe00]"></i>Maslak Mah. No:15, Sarıyer / İstanbul</p>
+                  <p><i class="fa fa-phone me-2 text-[#ffbe00]"></i><a href="tel:+905555555555">+90 555 555 55 55</a></p>
+                  <p><i class="fa fa-envelope me-2 text-[#ffbe00]"></i><a href="mailto:info@efsanalofis.com">info@efsanalofis.com</a></p>
+                </address>
+              </div>
+
+              <div class="p-4 rounded-3 shadow-sm bg-[#ffbe00] text-dark">
+                <h4 class="mb-3">📞 Hızlı İletişim</h4>
+                <p>Bizi doğrudan arayın ya da WhatsApp’tan mesaj gönderin:</p>
+                <a href="https://wa.me/905555555555" target="_blank" class="btn btn-dark w-100 mt-2">WhatsApp Üzerinden Mesaj Gönder</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- JS Dosyaları -->
+  <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/lenis.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/OwlCarousel2Thumbs.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
+    <script src="js/jquery.lazy.plugins.min.js"></script>
+    <script src="js/jquery.smartsticky.min.js"></script>
+    <script src="js/designesia.js"></script>
+
+  <!-- Navbar ve Footer Yükleme -->
+  <script>
+    fetch("components/Navbar.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("navbar").innerHTML = html);
+
+    fetch("components/Footer.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("footer").innerHTML = html);
+  </script>
+</body>
+</html>

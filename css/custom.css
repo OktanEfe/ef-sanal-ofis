@@ -1,0 +1,930 @@
+/* ================================
+   🌟 EF SANAL OFİS - CUSTOM STYLE
+   ================================ */
+
+/* Temel font ve renk ayarları */
+body {
+    font-family: "Inter", sans-serif !important;
+    color: #0f0f0f;
+    background-color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Başlık genel yapısı */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0f0f0f;
+  }
+  
+  /* Paragraf metinleri */
+  p {
+    color: #2b2b2b;
+  }
+  
+  /* Ana renk değişkenleri */
+  :root {
+    --primary-color: #ffbe00 !important;
+    --secondary-color: #ffbe00 !important;
+  }
+  
+  /* 🔸 Sarı vurgular (sadece özel yerlerde) */
+  .id-color,
+  .id-color-2,
+  h1 span,
+  h2 span,
+  h3 span,
+  .highlight,
+  strong.highlight {
+    color: #ffbe00 !important;
+  }
+  
+  /* Linkler */
+  a {
+    color: #0f0f0f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffbe00;
+  }
+  
+  /* ✨ Ana Buton */
+  .btn-main {
+    background-color: #ffbe00 !important;
+    color: #0f0f0f !important;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .btn-main:hover {
+    background-color: #0f0f0f !important;
+    color: #ffffff !important;
+  }
+  
+  /* 🔹 Navbar */
+  #mainmenu li a {
+    color: #0f0f0f !important;
+    font-weight: 500;
+  }
+  
+  #mainmenu li a:hover,
+  #mainmenu li.active > a {
+    color: #ffbe00 !important;
+  }
+  
+  /* ✨ Hero Section */
+  #section-hero {
+    background: linear-gradient(180deg, #ffffff 0%, #fffdf5 100%);
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+  
+  #section-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+  
+  #section-hero p {
+    max-width: 540px;
+    font-size: 17px;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+  }
+  
+  /* ✨ Sayaç kısmı */
+  #section-hero .de_count h3 {
+    font-weight: 700;
+    color: #0f0f0f !important;
+    margin-bottom: 0.25rem;
+  }
+  
+  #section-hero .de_count h5 {
+    color: #ffbe00 !important;
+    font-weight: 500;
+  }
+  
+  /* ✨ Footer */
+  .footer-light a {
+    color: #0f0f0f;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-light a:hover {
+    color: #ffbe00;
+  }
+  
+  /* Hover geçişleri daha yumuşak olsun */
+  *, *::before, *::after {
+    transition: all 0.2s ease-in-out;
+  }
+.text-primary {
+    color: #ffbe00 !important;
+  }
+  /* ===== CTA Banner - EF Sanal Ofis ===== */
+#section-cta.cta-banner {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("../images/background/subheader-4.jpg") no-repeat center center / cover;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  /* Overlay */
+  #section-cta.cta-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+  
+  /* İçerik */
+  #section-cta .cta-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; /* yazı ve buton alt alta */
+    align-items: center;    /* ortalama */
+    justify-content: center;
+  }
+  
+  #section-cta .cta-inner h2 {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 32px;
+    line-height: 1.25;
+  }
+  
+  /* Buton tam ortada */
+  #section-cta .cta-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #section-cta .btn-cta {
+    display: inline-block;
+    border: 2px solid #ffbe00;
+    color: #ffbe00;
+    background: transparent;
+    padding: 14px 36px;
+    border-radius: 50px;
+    
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  #section-cta .btn-cta:hover {
+    background: #ffbe00;
+    color: #0f0f0f;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #section-cta.cta-banner {
+      height: 70vh;
+    }
+    #section-cta .cta-inner h2 {
+      font-size: 28px;
+    }
+    #section-cta .btn-cta {
+      font-size: 16px;
+      padding: 12px 28px;
+    }
+  }
+  /* ===== Navbar Özelleştirmesi ===== */
+header {
+    font-family: "Inter", sans-serif;
+  }
+  
+  #mainmenu {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #mainmenu li a {
+    font-weight: 500;
+    color: #0f0f0f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #mainmenu li a:hover {
+    color: #ffbe00;
+  }
+  
+  /* Buton */
+  .menu_side_area .btn-main {
+    display: inline-flex;
+    align-items: center;
+    background: #ffbe00;
+    color: #0f0f0f;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .menu_side_area .btn-main:hover {
+    background: #0f0f0f;
+    color: #ffffff;
+  }
+  
+  .menu_side_area .btn-main i {
+    margin-right: 6px;
+  }
+  
+  /* Mobil menü butonu */
+  #menu-btn {
+    margin-left: 12px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 991px) {
+    #mainmenu {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .footer-light {
+    font-family: "Inter", sans-serif;
+    background: #fffdf5;
+    color: #0f0f0f;
+  }
+  
+  .footer-light h5 {
+    font-weight: 600;
+    color: #0f0f0f;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-light ul li a {
+    color: #2b2b2b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-light ul li a:hover {
+    color: #ffbe00;
+  }
+  
+  .subfooter {
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+  
+  .subfooter .copy {
+    color: #ffffff;
+  }
+  
+  .social-icons a {
+    color: #ffffff;
+    margin-left: 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffbe00;
+  }
+  /* ===== EF SANAL OFİS - NAVBAR LOGO DÜZELTMESİ ===== */
+header #logo {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  header #logo .logo {
+    max-height: 90px; 
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+  
+  .header-light .de-flex {
+    align-items: center;
+  }
+  /* ===== EF SANAL OFİS LOGO GÖRÜNÜRLÜK FIX ===== */
+header #logo img.logo {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+  
+  /* Scroll sırasında da gizlenmesini engelle */
+  header.header-light.scroll-light #logo img.logo,
+  header.header-small #logo img.logo {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+/* Genel Renk Teması */
+:root {
+  --primary: #ffbe00;
+  --dark: #0f0f0f;
+  --light: #fffdf5;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Ana Buton */
+.btn-main {
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+/* Form alanları */
+.form-control {
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 190, 0, 0.25);
+}
+
+/* Hero başlığı */
+#subheader {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#subheader h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #subheader h1 { font-size: 36px; }
+  .btn-main { width: 100%; }
+}
+
+#sartlar-avantajlar ul li {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#sartlar-avantajlar ul li:hover {
+  background: #fffbdf;
+  transform: translateX(5px);
+}
+#sartlar-avantajlar h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+#section-studio-type p {
+  color: #fff !important;
+}
+#section-studio-type h3, 
+#section-studio-type h2 {
+  color: #fff !important;
+}
+/* Navbar beyaz görünür, hero aşağıda başlar */
+#de-carousel {
+  margin-top: 90px; /* navbar yüksekliği kadar boşluk */
+}
+
+/* Butonları daha oval ve yumuşak yap */
+.btn-main.btn-oval {
+  border-radius: 50px !important;
+  padding: 12px 40px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-main.btn-oval:hover {
+  transform: scale(1.05);
+  background-color: #ffbe00;
+  color: #ffffff !important;
+  
+}
+/* Navbar sabit ve beyaz */
+#navbar {
+  background-color: #ffffff !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Hero, navbarın altından başlasın ama arkasına girmesin */
+#de-carousel {
+  margin-top: 0 !important;
+  padding-top: 95px !important; /* Navbar yüksekliği kadar */
+  position: relative;
+  z-index: 1;
+}
+/* Ana buton stili - sarı arka plan, siyah yazı */
+.btn-main {
+  background-color: #ffbe00;
+  color: #0f0f0f !important;
+  border: 2px solid transparent;
+  border-radius: 50px !important;
+  padding: 12px 40px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Hover efekti - siyah arka plan, beyaz yazı */
+.btn-main:hover {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+#gorusme {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 40px;
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#gorusme img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gorusme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#gorusme .btn-main {
+  z-index: 2;
+}
+.video-box:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+#neden-ef h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#neden-ef h5 span {
+  vertical-align: middle;
+}
+
+#neden-ef h5 .text-dark {
+  color: #111111;
+}
+
+#neden-ef p {
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Görsel yapı */
+.photo-grid-lg {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 480px;
+}
+
+.photo-img-lg {
+  position: absolute;
+  border-radius: 28px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.photo-img-lg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 45px rgba(0,0,0,0.2);
+}
+
+.photo-img-lg.img-1 {
+  top: 0;
+  left: 60px;
+  width: 260px;
+  height: 210px;
+}
+
+.photo-img-lg.img-2 {
+  top: 200px;
+  right: 40px;
+  width: 240px;
+  height: 180px;
+}
+
+.photo-img-lg.img-3 {
+  bottom: 0;
+  left: 100px;
+  width: 280px;
+  height: 200px;
+}
+
+#sahis-sirketi h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #111111;
+}
+
+#sahis-sirketi p {
+  color: #555555;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* Ortak buton stili (hero’dakiyle aynı) */
+.btn-main.btn-oval {
+  display: inline-block;
+  background-color: #ffbe00;
+  color: #000;
+  border-radius: 50px;
+  padding: 14px 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-main.btn-oval:hover {
+  background-color: #000;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+#cta-final {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+}
+
+/* 🌟 Parlayan noktalar */
+#cta-final .cta-particles-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Her parlama için bir halka efekti */
+.cta-particles-bg::before,
+.cta-particles-bg::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgb(255, 208, 0) 0%,
+    rgba(153, 135, 1, 0.05) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 50%;
+  animation: glowMove 12s infinite ease-in-out;
+  filter: blur(50px);
+}
+
+/* 2 farklı parlaklık katmanı */
+.cta-particles-bg::after {
+  animation-delay: 6s;
+  width: 400px;
+  height: 400px;
+  opacity: 0.8;
+  filter: blur(70px);
+}
+
+/* 🔁 Hareket ve ışık yoğunluğu değişimi */
+@keyframes glowMove {
+  0% {
+    top: 10%;
+    left: 20%;
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  25% {
+    top: 40%;
+    left: 80%;
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  50% {
+    top: 70%;
+    left: 50%;
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  75% {
+    top: 20%;
+    left: 70%;
+    opacity: 0.7;
+    transform: scale(1.15);
+  }
+  100% {
+    top: 10%;
+    left: 20%;
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+}
+
+/* 🟡 Buton */
+.btn-main.btn-oval {
+  display: inline-block;
+  background-color: #ffbe00;
+  color: #000;
+  border-radius: 50px;
+  padding: 14px 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 5;
+  position: relative;
+}
+
+.btn-main.btn-oval:hover {
+  background-color: #ffbe00 !important;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+/* "Sanal Ofis Nedir" için üstten nazik bir ofset */
+.sanal-offset { 
+  margin-top: 40px; 
+}
+@media (min-width: 992px){
+  .sanal-offset { 
+    margin-top: 80px; 
+  }
+}
+
+/* Navbar yüksekliği kadar hero aşağı insin (beyaz navbar hep görünsün) */
+#de-carousel { margin-top: 90px; }
+
+/* Hero’dan sonra ilk büyük içerik (nedir) bir tık daha aşağıdan başlasın */
+#sanal-ofis-nedir { margin-top: 60px; }
+@media (min-width: 992px){
+  #sanal-ofis-nedir { margin-top: 100px; }
+}
+
+/* Navbar sabitlenmişse içerik çakışmasını engelle */
+#subheader {
+  margin-top: 100px; /* navbar yüksekliği kadar boşluk */
+  position: relative;
+  z-index: 1;
+}
+
+.navbar,
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.feature-box {
+  transform: translateY(0);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 190, 0, 0.08);
+  background: #ffffff;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+  background-color: #fffef8;
+  box-shadow: 0 12px 24px rgba(255, 190, 0, 0.2);
+}
+
+.icon-circle {
+  box-shadow: inset 0 2px 6px rgba(255, 190, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover .icon-circle {
+  background-color: #ffbe00;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 190, 0, 0.4);
+}
+
+/* 🔹 Hero kısmı ile navbar arasındaki boşluk */
+#section-hero {
+  padding-top: 100px;   /* hero içeriği biraz daha aşağı insin */
+  margin-top: 80px;     /* navbar ile arayı aç */
+}
+
+/* 🔹 Hero içindeki görselin ve yazının nefes alması */
+#section-hero .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* 🔹 Kutuların çizgileri belirgin hale gelsin */
+#section-why-choose-us .feature-box {
+  border: 1.5px solid rgba(255, 190, 0, 0.5); /* sarımsı belirgin kenar */
+  background: #ffffff;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+/* 🔹 Hover'da daha parlak kenar efekti */
+#section-why-choose-us .feature-box:hover {
+  transform: translateY(-6px);
+  border-color: #ffbe00;
+  background-color: #fffef8;
+  box-shadow: 0 8px 24px rgba(255, 190, 0, 0.35);
+}
+
+/* 🔹 Başlıklar daha net */
+#section-why-choose-us .feature-box h4 {
+  color: #0f0f0f;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* 🔹 Açıklama metinleri daha okunaklı */
+#section-why-choose-us .feature-box p {
+  font-size: 14px;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+/* 🔹 Avantaj kutularını eşitle */
+#section-why-choose-us .feature-box {
+  min-height: 180px;         /* tüm kutular eşit boyda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* içeriği dikey ortala */
+  border: 1.5px solid rgba(255, 190, 0, 0.4);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* 🔹 Görsel ile kutular arasında boşluk */
+#section-why-choose-us img {
+  margin-bottom: 60px; /* resimle kutular arası mesafe */
+}
+
+/* Accordion düzeltilmiş stiller */
+.accordion-button {
+  background-color: #fff;
+  color: #0f0f0f;
+  font-weight: 500;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffbe00;
+  background-color: #fffdf5;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Mavi focus ışığını kaldır */
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Ok ikonunu sarı yap ve yönünü değiştir */
+.accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(88%) saturate(1141%) hue-rotate(2deg) brightness(102%) contrast(104%);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(98%) saturate(1541%) hue-rotate(2deg) brightness(101%) contrast(102%);
+}
+
+/* ========== SAYFA HERO ALANI ========== */
+.page-hero {
+  background-color: #f8f9fa;
+  padding: 120px 0 80px;
+  text-align: center;
+  margin-top: 90px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  color: #555;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+  .page-hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* Sanal Ofis - ikon ve metin hizalama */
+#section-about .d-flex.align-items-start {
+  align-items: flex-start;
+}
+
+#section-about .d-flex.align-items-start .me-3 {
+  width: 36px; /* sabit ikon alanı */
+  text-align: center;
+  margin-top: 3px; /* ikonları biraz aşağı alır */
+}
+
+#section-about .d-flex.align-items-start h5 {
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+#section-about .d-flex.align-items-start p {
+  margin-left: 0;
+  line-height: 1.6;
+}
