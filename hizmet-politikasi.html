@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hizmet Şartları | EF Sanal Ofis</title>
 
-  <!-- CSS -->
+  <!-- CSS Dosyaları -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/custom.css?v=2" />
+
+  <!-- Style.css öncelikli yüklensin -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const styleLink = document.createElement("link");
+      styleLink.rel = "stylesheet";
+      styleLink.href = "css/style.css?v=" + Date.now();
+      document.head.prepend(styleLink);
+    });
+  </script>
 </head>
+
 <body>
   <div id="navbar"></div>
 
@@ -17,35 +28,71 @@
   <section class="page-hero">
     <div class="container">
       <h1>Hizmet Şartları</h1>
-      <p>EF Sanal Ofis tarafından sunulan hizmetlerin kullanım koşullarını bu sayfada bulabilirsiniz.</p>
+      <p>EF Sanal Ofis tarafından sunulan hizmetlerin kullanım koşullarını ve kullanıcı yükümlülüklerini bu sayfada bulabilirsiniz.</p>
     </div>
   </section>
 
+  <!-- ANA İÇERİK -->
   <main class="container py-5">
-    <h4>1. Hizmet Tanımı</h4>
-    <p>EF Sanal Ofis, işletmelere yasal iş adresi, sanal ofis, toplantı alanı ve sekreterya hizmetleri sağlamaktadır...</p>
 
-    <h4>2. Kullanım Koşulları</h4>
-    <p>Kullanıcı, hizmetleri yalnızca yasal amaçlarla ve sözleşmede belirtilen sınırlar içerisinde kullanacağını taahhüt eder...</p>
+    <p>EF Sanal Ofis olarak, müşterilerimize sanal ofis, yasal iş adresi, toplantı alanı, sekreterya ve ilgili yan hizmetleri sunmaktayız. Bu hizmet şartları, web sitemizi ziyaret eden ve EF Sanal Ofis hizmetlerinden faydalanan tüm kullanıcılar için geçerlidir. Hizmetlerimizi kullanarak, bu şartları okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan etmiş olursunuz.</p>
 
-    <h4>3. Ücretlendirme ve Ödeme</h4>
-    <p>Hizmet ücretleri, sözleşme başlangıcında belirlenir. Ödemeler periyodik olarak yapılır...</p>
+    <p>EF Sanal Ofis hizmetleri, yalnızca yasal ticari faaliyetlerde kullanılabilir. Kullanıcı, hizmetleri hiçbir şekilde yasa dışı, ahlaka aykırı, dolandırıcılık veya üçüncü taraf haklarını ihlal edici amaçlarla kullanmamayı taahhüt eder. Tespit edilmesi halinde EF Sanal Ofis, ilgili üyeliği derhal sonlandırma ve yasal mercilere bildirimde bulunma hakkına sahiptir.</p>
 
-    <h4>4. Sözleşmenin Feshi</h4>
-    <p>Taraflardan biri yükümlülüklerini yerine getirmezse, diğeri sözleşmeyi tek taraflı feshedebilir...</p>
+    <p>Hizmet ücretleri, sözleşme süresi başında belirlenir ve belirtilen periyotlarda (aylık, üç aylık, yıllık) tahsil edilir. Ödemeler kredi kartı, banka havalesi veya belirtilen diğer ödeme yöntemleri ile yapılabilir. Ödemenin zamanında yapılmaması durumunda, EF Sanal Ofis hizmetleri askıya alma veya fesih hakkını saklı tutar.</p>
 
-    <h4>5. Sorumluluk Reddi</h4>
-    <p>EF Sanal Ofis, mücbir sebeplerden doğan hizmet kesintilerinden sorumlu tutulamaz...</p>
+    <p>Kullanıcı, paylaşılan bilgilerin doğruluğundan sorumludur. Yanlış veya eksik bilgi verilmesi, iletişim aksaklıklarına ve sözleşme iptallerine neden olabilir. EF Sanal Ofis, bu durumda doğacak zararlardan sorumlu tutulamaz. Ayrıca kullanıcı, sisteme izinsiz erişim sağlamamayı ve güvenlik önlemlerini ihlal etmemeyi kabul eder.</p>
 
-    <h4>6. Değişiklik Hakkı</h4>
-    <p>EF Sanal Ofis, hizmet şartlarını güncelleme hakkını saklı tutar. Güncellemeler yayınlandığı anda yürürlüğe girer.</p>
+    <p>EF Sanal Ofis, hizmetlerinin kesintisiz ve hatasız çalışması için gerekli tüm teknik önlemleri alır. Ancak doğal afet, siber saldırı, altyapı arızası gibi mücbir sebeplerle oluşabilecek kesintilerden sorumlu değildir. Bu tür durumlarda hizmetin yeniden aktif hale getirilmesi için makul çaba gösterilir.</p>
+
+    <p>Hizmet sözleşmesi, taraflardan biri yükümlülüklerini yerine getirmediğinde, karşı tarafın yazılı bildirimi üzerine tek taraflı olarak feshedilebilir. Fesih sonrasında, kullanıcıya ait veriler yasal saklama süresi sonunda sistemden kalıcı olarak silinir.</p>
+
+    <p>EF Sanal Ofis, hizmet şartlarını önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar. Güncellenen şartlar, web sitemizde yayımlandığı andan itibaren yürürlüğe girer. Kullanıcıların, hizmetleri kullanmaya devam etmeden önce güncel şartları incelemesi önerilir.</p>
+
+    <p>Bu şartlar, Türk hukuku kapsamında yürürlüktedir ve taraflar arasında doğabilecek uyuşmazlıklarda Kocaeli Mahkemeleri yetkilidir. EF Sanal Ofis olarak hedefimiz, müşterilerimize güvenilir, şeffaf ve sürdürülebilir bir hizmet sunmaktır.</p>
+
   </main>
 
   <div id="footer"></div>
 
+  <!-- JS Dosyaları -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/designesia.js"></script>
+
+  <!-- Navbar ve Footer -->
   <script>
-    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
-    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("components/Navbar.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
+
+          const initNavbar = () => {
+            const menuBtn = document.querySelector("#menu-btn");
+            const menu = document.querySelector("#mainmenu");
+            if (menuBtn && menu) {
+              menuBtn.replaceWith(menuBtn.cloneNode(true));
+              const newBtn = document.querySelector("#menu-btn");
+              newBtn.addEventListener("click", () => {
+                newBtn.classList.toggle("active");
+                menu.classList.toggle("open");
+              });
+              return true;
+            }
+            return false;
+          };
+          const interval = setInterval(() => {
+            if (initNavbar()) clearInterval(interval);
+          }, 300);
+        });
+
+      fetch("components/Footer.html")
+        .then(r => r.text())
+        .then(html => document.getElementById("footer").innerHTML = html);
+    });
   </script>
 </body>
 </html>

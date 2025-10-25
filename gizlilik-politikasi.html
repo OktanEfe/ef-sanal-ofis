@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gizlilik Politikası | EF Sanal Ofis</title>
 
-  <!-- CSS -->
+  <!-- CSS Dosyaları -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/custom.css?v=2" />
+
+  <!-- Style.css öncelikli yüklensin -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const styleLink = document.createElement("link");
+      styleLink.rel = "stylesheet";
+      styleLink.href = "css/style.css?v=" + Date.now();
+      document.head.prepend(styleLink);
+    });
+  </script>
 </head>
+
 <body>
   <div id="navbar"></div>
 
@@ -17,38 +28,69 @@
   <section class="page-hero">
     <div class="container">
       <h1>Gizlilik Politikası</h1>
-      <p>Kişisel verilerinizin korunması ve kullanım şekline dair tüm detaylara buradan ulaşabilirsiniz.</p>
+      <p>EF Sanal Ofis olarak kişisel verilerinizin gizliliğine en yüksek önemi veriyoruz. Bu sayfa, verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında detaylı bilgi sunar.</p>
     </div>
   </section>
 
+  <!-- ANA İÇERİK -->
   <main class="container py-5">
-    <h4>1. Toplanan Bilgiler</h4>
-    <p>Ad, e-posta, telefon gibi kişisel bilgiler yalnızca sizin onayınızla toplanır...</p>
 
-    <h4>2. Bilgilerin Kullanımı</h4>
-    <p>Toplanan veriler, hizmet kalitemizi artırmak ve sizinle iletişim kurmak amacıyla kullanılır...</p>
+    <p>EF Sanal Ofis, kullanıcıların gizliliğini korumayı temel prensip olarak benimsemiştir. Web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda, yalnızca gerekli durumlarda kişisel verileriniz toplanır. Bu bilgiler, ad, soyad, e-posta adresi, telefon numarası gibi doğrudan sizin tarafınızdan paylaşılan verilerdir.</p>
 
-    <h4>3. Bilgilerin Saklanması</h4>
-    <p>Tüm veriler güvenli sunucularda saklanır, yasal zorunluluklar dışında paylaşılmaz...</p>
+    <p>Toplanan bilgiler; sizinle sağlıklı iletişim kurmak, hizmetlerimizi geliştirmek, randevu ve sözleşme süreçlerini yönetmek gibi amaçlarla kullanılmaktadır. Verileriniz, hiçbir koşulda izniniz olmadan üçüncü taraflarla paylaşılmaz ve yalnızca belirtilen yasal yükümlülükler çerçevesinde işlenir.</p>
 
-    <h4>4. Üçüncü Taraf Hizmetleri</h4>
-    <p>Google Analytics gibi araçlar yalnızca anonim istatistiksel veri toplar...</p>
+    <p>EF Sanal Ofis, kişisel verilerinizi modern güvenlik standartlarına sahip sistemlerde, SSL sertifikaları ve güçlü şifreleme yöntemleriyle korur. Veriler, yalnızca yetkili kişiler tarafından erişilebilen güvenli ortamlarda saklanır ve gerekmedikçe uzun süre tutulmaz.</p>
 
-    <h4>5. Veri Güvenliği</h4>
-    <p>Veri güvenliği için SSL sertifikaları ve modern güvenlik önlemleri uygulanmaktadır...</p>
+    <p>Üçüncü taraf hizmet sağlayıcılarımız (örneğin Google Analytics) anonim istatistiksel veriler toplayabilir. Bu veriler, site performansını ölçmek ve kullanıcı deneyimini geliştirmek amacıyla kullanılır. Ancak kişisel bilgileriniz bu süreçlerde paylaşılmaz ya da kimliğinizle ilişkilendirilmez.</p>
 
-    <h4>6. Kullanıcı Hakları</h4>
-    <p>KVKK kapsamında, verilerinize erişme, düzeltme veya silme hakkına sahipsiniz...</p>
+    <p>EF Sanal Ofis olarak KVKK ve GDPR ilkelerine uygun hareket etmekteyiz. Kullanıcılar, diledikleri zaman kişisel verilerine erişme, düzeltme, silme veya işlemeyi sınırlandırma hakkına sahiptir. Bu taleplerinizi <a href="mailto:info@efsanalofis.com">info@efsanalofis.com</a> adresine iletebilirsiniz.</p>
 
-    <h4>7. Güncellemeler</h4>
-    <p>Gizlilik politikamız zaman zaman güncellenebilir. Son sürüm web sitemizde yayınlanır.</p>
+    <p>Gizlilik politikamız, yasal gereklilikler veya hizmet koşullarımızdaki değişiklikler doğrultusunda güncellenebilir. En güncel sürüm her zaman bu sayfada yayınlanır. Kullanıcılarımızdan beklentimiz, politikamızda yapılan değişiklikleri periyodik olarak incelemeleridir.</p>
+
+    <p>EF Sanal Ofis olarak amacımız, yalnızca yasal yükümlülükleri yerine getirmek değil, aynı zamanda kullanıcılarımızın güvenini korumaktır. Verilerinizi gizlilik ve dürüstlük ilkeleri doğrultusunda korumaya devam edeceğiz.</p>
+
   </main>
 
   <div id="footer"></div>
 
+  <!-- JS Dosyaları -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/designesia.js"></script>
+
+  <!-- Navbar ve Footer -->
   <script>
-    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
-    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("components/Navbar.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
+
+          const initNavbar = () => {
+            const menuBtn = document.querySelector("#menu-btn");
+            const menu = document.querySelector("#mainmenu");
+            if (menuBtn && menu) {
+              menuBtn.replaceWith(menuBtn.cloneNode(true));
+              const newBtn = document.querySelector("#menu-btn");
+              newBtn.addEventListener("click", () => {
+                newBtn.classList.toggle("active");
+                menu.classList.toggle("open");
+              });
+              return true;
+            }
+            return false;
+          };
+          const interval = setInterval(() => {
+            if (initNavbar()) clearInterval(interval);
+          }, 300);
+        });
+
+      fetch("components/Footer.html")
+        .then(r => r.text())
+        .then(html => document.getElementById("footer").innerHTML = html);
+    });
   </script>
 </body>
 </html>

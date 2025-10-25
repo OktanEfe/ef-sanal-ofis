@@ -3,53 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Çerez Politikası | EF Sanal Ofis</title>
+  <title>KVKK Aydınlatma Metni | EF Sanal Ofis</title>
 
-  <!-- CSS -->
+  <!-- CSS Dosyaları -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/custom.css?v=2" />
+
+  <!-- Style.css öncelikli yüklensin -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const styleLink = document.createElement("link");
+      styleLink.rel = "stylesheet";
+      styleLink.href = "css/style.css?v=" + Date.now();
+      document.head.prepend(styleLink);
+    });
+  </script>
 </head>
+
 <body>
   <div id="navbar"></div>
 
-  <!-- HERO -->
+  <!-- HERO BAŞLIK -->
   <section class="page-hero">
     <div class="container">
-      <h1>Çerez Politikası</h1>
-      <p>Web sitemizde kullanılan çerezlerin türleri, amaçları ve yönetim tercihleri hakkında detaylı bilgi.</p>
+      <h1>KVKK Aydınlatma Metni</h1>
+      <p>EF Sanal Ofis olarak kişisel verilerin korunmasına büyük önem veriyoruz. Bu sayfa, verilerinizin nasıl işlendiğini ve korunduğunu açıklar.</p>
     </div>
   </section>
 
+  <!-- ANA İÇERİK -->
   <main class="container py-5">
-    <h4>1. Çerez Nedir?</h4>
-    <p>Çerezler, web siteleri tarafından tarayıcınıza kaydedilen küçük veri dosyalarıdır...</p>
 
-    <h4>2. Kullanılan Çerez Türleri</h4>
-    <ul>
-      <li><strong>Zorunlu Çerezler:</strong> Site güvenliği ve temel işlevler için gereklidir.</li>
-      <li><strong>Analitik Çerezler:</strong> Trafik ve performans analizi sağlar.</li>
-      <li><strong>Reklam Çerezleri:</strong> İlgi alanlarınıza göre reklam sunar.</li>
-    </ul>
+    <p>EF Sanal Ofis olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu sıfatıyla, kişisel verilerinizi hukuka uygun, şeffaf ve güvenli bir şekilde işliyoruz. Bu metin, kişisel verilerinizin hangi amaçlarla işlendiği, kimlerle paylaşıldığı ve hangi haklara sahip olduğunuz konusunda sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
-    <h4>3. Çerezlerin Kullanım Amaçları</h4>
-    <p>EF Sanal Ofis, çerezleri kullanıcı deneyimini iyileştirmek ve performansı ölçmek için kullanır...</p>
+    <p>Kişisel verileriniz, ofis hizmetleri sunma, sözleşme süreçlerinin yürütülmesi, iletişim faaliyetlerinin sağlanması ve yasal yükümlülüklerimizin yerine getirilmesi amacıyla toplanmaktadır. Bu veriler; otomatik ya da manuel yollarla, sözlü, yazılı veya elektronik ortamda elde edilebilir.</p>
 
-    <h4>4. Çerezleri Yönetme</h4>
-    <p>Tarayıcı ayarlarınızdan çerezleri kabul edebilir, reddedebilir veya silebilirsiniz...</p>
+    <p>Toplanan kişisel verileriniz, hizmet kalitesini artırmak, müşteri memnuniyetini ölçmek, kampanya ve bilgilendirme süreçlerini yönetmek amacıyla işlenebilir. Bununla birlikte, yalnızca açık rızanız olması veya yasal zorunluluk bulunması durumunda üçüncü kişilerle paylaşılmaktadır.</p>
 
-    <h4>5. Üçüncü Taraf Çerezleri</h4>
-    <p>Google Analytics gibi üçüncü taraf hizmetler tarafından çerezler kullanılabilir...</p>
+    <p>Kişisel verileriniz, güvenli bir şekilde saklanmakta ve yetkisiz erişimlere karşı korunmaktadır. EF Sanal Ofis, bilgi güvenliği standartlarına uygun teknik ve idari önlemleri almakta, verilerinizi yalnızca gerekli olduğu süre boyunca tutmaktadır.</p>
 
-    <h4>6. Güncellemeler</h4>
-    <p>EF Sanal Ofis, bu politikayı zaman zaman güncelleyebilir. Değişiklikler yayınlandığı anda geçerli olur.</p>
+    <p>KVKK’nın 11. maddesi kapsamında; kişisel verilerinizin işlenip işlenmediğini öğrenme, eksik veya yanlış işlenmişse düzeltilmesini talep etme, silinmesini veya anonim hale getirilmesini isteme gibi haklara sahipsiniz. Bu taleplerinizi info@efsanalofis.com adresine e-posta göndererek iletebilirsiniz.</p>
+
+    <p>EF Sanal Ofis olarak, kişisel verilerinizin gizliliğini korumayı ve yalnızca belirlenen amaçlar doğrultusunda işlemeyi taahhüt ederiz. Veri güvenliği politikamızda yapılacak güncellemeler bu sayfa üzerinden duyurulacaktır.</p>
+
   </main>
 
   <div id="footer"></div>
 
+  <!-- JS Dosyaları -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/designesia.js"></script>
+
+  <!-- Navbar ve Footer -->
   <script>
-    fetch("components/Navbar.html").then(r => r.text()).then(html => document.getElementById("navbar").innerHTML = html);
-    fetch("components/Footer.html").then(r => r.text()).then(html => document.getElementById("footer").innerHTML = html);
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("components/Navbar.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
+
+          const initNavbar = () => {
+            const menuBtn = document.querySelector("#menu-btn");
+            const menu = document.querySelector("#mainmenu");
+            if (menuBtn && menu) {
+              menuBtn.replaceWith(menuBtn.cloneNode(true));
+              const newBtn = document.querySelector("#menu-btn");
+              newBtn.addEventListener("click", () => {
+                newBtn.classList.toggle("active");
+                menu.classList.toggle("open");
+              });
+              return true;
+            }
+            return false;
+          };
+          const interval = setInterval(() => {
+            if (initNavbar()) clearInterval(interval);
+          }, 300);
+        });
+
+      fetch("components/Footer.html")
+        .then(r => r.text())
+        .then(html => document.getElementById("footer").innerHTML = html);
+    });
   </script>
 </body>
 </html>

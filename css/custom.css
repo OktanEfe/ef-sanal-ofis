@@ -25,8 +25,8 @@ body {
   
   /* Ana renk değişkenleri */
   :root {
-    --primary-color: #ffbe00 !important;
-    --secondary-color: #ffbe00 !important;
+    --primary-color: #ffffff ;
+    --secondary-color: #ffffff ;
   }
   
   /* 🔸 Sarı vurgular (sadece özel yerlerde) */
@@ -81,7 +81,7 @@ body {
   /* ✨ Hero Section */
   #section-hero {
     background: linear-gradient(180deg, #ffffff 0%, #fffdf5 100%);
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 6rem;
   }
   
@@ -209,66 +209,7 @@ body {
       padding: 12px 28px;
     }
   }
-  /* ===== Navbar Özelleştirmesi ===== */
-header {
-    font-family: "Inter", sans-serif;
-  }
-  
-  #mainmenu {
-    display: flex;
-    gap: 36px;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  #mainmenu li a {
-    font-weight: 500;
-    color: #0f0f0f;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  #mainmenu li a:hover {
-    color: #ffbe00;
-  }
-  
-  /* Buton */
-  .menu_side_area .btn-main {
-    display: inline-flex;
-    align-items: center;
-    background: #ffbe00;
-    color: #0f0f0f;
-    font-weight: 600;
-    border-radius: 50px;
-    padding: 10px 22px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .menu_side_area .btn-main:hover {
-    background: #0f0f0f;
-    color: #ffffff;
-  }
-  
-  .menu_side_area .btn-main i {
-    margin-right: 6px;
-  }
-  
-  /* Mobil menü butonu */
-  #menu-btn {
-    margin-left: 12px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 991px) {
-    #mainmenu {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
+
 
   .footer-light {
     font-family: "Inter", sans-serif;
@@ -312,46 +253,9 @@ header {
   .social-icons a:hover {
     color: #ffbe00;
   }
-  /* ===== EF SANAL OFİS - NAVBAR LOGO DÜZELTMESİ ===== */
-header #logo {
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-  }
+ 
   
-  header #logo .logo {
-    max-height: 90px; 
-    width: auto;
-    display: inline-block;
-    object-fit: contain;
-    margin-top: 5px;
-  }
-  
-  .header-light .de-flex {
-    align-items: center;
-  }
-  /* ===== EF SANAL OFİS LOGO GÖRÜNÜRLÜK FIX ===== */
-header #logo img.logo {
-    display: inline-block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: none !important;
-  }
-  
-  /* Scroll sırasında da gizlenmesini engelle */
-  header.header-light.scroll-light #logo img.logo,
-  header.header-small #logo img.logo {
-    display: inline-block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
+
 /* Genel Renk Teması */
 :root {
   --primary: #ffbe00;
@@ -438,9 +342,7 @@ h1, h2, h3, h4, h5 {
   color: #fff !important;
 }
 /* Navbar beyaz görünür, hero aşağıda başlar */
-#de-carousel {
-  margin-top: 90px; /* navbar yüksekliği kadar boşluk */
-}
+
 
 /* Butonları daha oval ve yumuşak yap */
 .btn-main.btn-oval {
@@ -458,23 +360,10 @@ h1, h2, h3, h4, h5 {
   
 }
 /* Navbar sabit ve beyaz */
-#navbar {
-  background-color: #ffffff !important;
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
+
 
 /* Hero, navbarın altından başlasın ama arkasına girmesin */
-#de-carousel {
-  margin-top: 0 !important;
-  padding-top: 95px !important; /* Navbar yüksekliği kadar */
-  position: relative;
-  z-index: 1;
-}
+
 /* Ana buton stili - sarı arka plan, siyah yazı */
 .btn-main {
   background-color: #ffbe00;
@@ -737,28 +626,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Navbar yüksekliği kadar hero aşağı insin (beyaz navbar hep görünsün) */
-#de-carousel { margin-top: 90px; }
 
-/* Hero’dan sonra ilk büyük içerik (nedir) bir tık daha aşağıdan başlasın */
-#sanal-ofis-nedir { margin-top: 60px; }
-@media (min-width: 992px){
-  #sanal-ofis-nedir { margin-top: 100px; }
-}
 
-/* Navbar sabitlenmişse içerik çakışmasını engelle */
-#subheader {
-  margin-top: 100px; /* navbar yüksekliği kadar boşluk */
-  position: relative;
-  z-index: 1;
-}
 
-.navbar,
-#navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
 .feature-box {
   transform: translateY(0);
   transition: all 0.35s ease;
@@ -784,10 +654,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* 🔹 Hero kısmı ile navbar arasındaki boşluk */
-#section-hero {
-  padding-top: 100px;   /* hero içeriği biraz daha aşağı insin */
-  margin-top: 80px;     /* navbar ile arayı aç */
-}
+
 
 /* 🔹 Hero içindeki görselin ve yazının nefes alması */
 #section-hero .container {
@@ -927,4 +794,601 @@ h1, h2, h3, h4, h5 {
 #section-about .d-flex.align-items-start p {
   margin-left: 0;
   line-height: 1.6;
+}
+/* ==========================================================
+   🌟 EF SANAL OFİS - NAVBAR VE RESPONSIVE DÜZENLEMELERİ
+   ========================================================== */
+
+/* 1️⃣ LOGO HİZALAMASI - Alt sınır navbar ile aynı */
+#logo img {
+  height: 85px;
+  object-fit: contain;
+  display: block;
+  margin: 6px 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* Scroll sonrası logoyu koru ve görünür tut */
+
+
+
+/* Responsive'de logo otomatik küçülsün */
+@media (max-width: 992px) {
+  #logo img {
+    height: 65px !important;
+  }
+}
+
+/* Scroll (sticky) olduğunda logoyu görünür ve sabit tut */
+header.sticky #logo img,
+header.header-white #logo img {
+  height: 85px !important;        
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Navbar beyaz zemin + sabit konum */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Navbar yüksekliği kadar offset (hero/subheader başlaması) */
+/* Global offset sadece hero ve subheader için olsun */
+#section-hero,
+#subheader {
+  margin-top: 90px !important;
+}
+
+/* Carousel (index2) için tek kural: navbar kadar boşluk */
+#de-carousel {
+  margin-top: 90px !important;
+  padding-top: 0 !important; /* olası üst padding’leri nötrle */
+}
+
+/* 2️⃣ MOBİLDE TELEFON VE BUTONU GİZLE */
+@media (max-width: 992px) {
+  .menu_side_area a[href^="tel:"],
+  .menu_side_area .btn-main {
+    display: none !important;
+  }
+}
+
+/* 3️⃣ HAMBURGER MENÜ TASARIMI */
+#menu-btn {
+  display: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+@media (max-width: 992px) {
+  #menu-btn {
+    display: block;
+  }
+
+  /* Menü kapalıyken gizli */
+  #mainmenu {
+    display: none;
+  }
+
+  /* Menü açılınca görünür */
+  #mainmenu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* tüm sayfa */
+    background-color: #ffffff; /* arka plan beyaz */
+    z-index: 9998;
+    overflow: hidden;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.4s ease;
+  }
+  
+  /* Menü kapalıyken görünmez */
+  #mainmenu {
+    opacity: 0;
+    transform: scale(1.05);
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  
+  /* Açıldığında aktif olur */
+  #mainmenu.open {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  
+  /* Menü linkleri */
+  #mainmenu li {
+    margin: 20px 0;
+    list-style: none;
+  }
+  
+  #mainmenu li a {
+    color: #ffbe00 !important; /* yazılar sarı */
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    transition: color 0.25s ease;
+  }
+  
+  #mainmenu li a:hover {
+    color: #0f0f0f !important; /* hover'da siyah */
+  }
+  /* Menü animasyonu */
+#mainmenu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#mainmenu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  #mainmenu li {
+    margin: 18px 0;
+    list-style: none;
+    border: none !important; /* çizgiler tamamen kaldırıldı */
+  }
+  
+  #mainmenu li a {
+    color: #0f0f0f !important;
+    font-size: 24px; /* daha büyük, kurumsal */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  #mainmenu li a:hover {
+    color: #ffffff !important; /* sadece yazı hover */
+  }
+
+  /* Menü açıkken hamburger animasyonu */
+  #menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  #menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  #menu-btn span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #ffbe00;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Menü açıkken buton sarıdan siyaha dönüşsün */
+  #menu-btn.active span {
+    background: #0f0f0f;
+  }
+}
+
+/* 4️⃣ ANA SAYFA - Responsive Hero Boşluğu ve Ortalama */
+@media (max-width: 768px) {
+  #section-hero .col-md-6:nth-child(1) {
+    text-align: center !important;
+  }
+
+  #section-hero h1 {
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  #section-hero p {
+    font-size: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  #section-hero a.btn-main {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  #section-hero .col-md-6:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+/* =======================================
+   🏠 SAYFA BAZLI DÜZENLEMELER
+   ======================================= */
+
+/* 1️⃣ Sadece Anasayfa (hero navbar’a yakınlaşsın) */
+body.page-home #section-hero {
+  margin-top: 70px !important;  /* default 90px idi */
+}
+
+/* 2️⃣ Sadece index2 (Sanal Ofis) için responsive düzen */
+body.page-sanalofis header,
+body.page-sanalofis #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff !important;
+  z-index: 9999 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Mobilde logo + hamburger taşmasın */
+@media (max-width: 992px) {
+  body.page-sanalofis header .de-flex {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  body.page-sanalofis #logo img {
+    height: 60px !important;
+  }
+}
+/* ============================================
+   🧭 SANAL OFİS SAYFASI (NAVBAR TAM GÖRÜNSÜN)
+   ============================================ */
+
+   body.page-sanalofis header,
+   body.page-sanalofis #navbar {
+     background-color: #ffffff !important;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 9999 !important;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+     padding: 0 !important; /* fazladan padding varsa sıfırla */
+   }
+   
+   /* Navbar içeriği orantılı dursun */
+   body.page-sanalofis .de-flex {
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 0 !important; /* yüksekliği korur */
+   }
+   
+   /* Logo aynı boyutta kalsın */
+   body.page-sanalofis #logo img {
+     height: 85px !important;
+     object-fit: contain;
+     margin: 0 !important;
+     padding: 0 !important;
+   }
+   
+   /* Hero kısmı navbarın arkasına girmesin */
+   body.page-sanalofis #section-hero,
+   body.page-sanalofis #subheader {
+     margin-top: 90px !important; /* navbar yüksekliği kadar boşluk */
+   }
+   
+   /* Mobil görünümde navbar içeriği taşmasın */
+   @media (max-width: 992px) {
+     body.page-sanalofis #logo img {
+       height: 70px !important; /* mobil için orantılı küçülme */
+     }
+   
+     body.page-sanalofis header .de-flex {
+       padding: 8px 0 !important;
+     }
+   
+     body.page-sanalofis #menu-btn span {
+       background: #000 !important; /* hamburger siyah kalır */
+     }
+   }
+   /* ============================================
+   🌟 TÜM SAYFALARDA NAVBAR BOYUTUNU EŞİTLE
+   ============================================ */
+
+/* Ortak yapı — header iç yüksekliği sabit */
+header,
+#navbar {
+  min-height: 110px; /* tüm sayfalarda sabit yükseklik */
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+}
+
+/* İç kısımdaki hizalama */
+header .de-flex {
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Logo boyutu sabit (masaüstü) */
+#logo img {
+  height: 85px !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobilde biraz küçült */
+@media (max-width: 992px) {
+  #logo img {
+    height: 70px !important;
+  }
+}
+/* ============================================
+   🧭 SANAL OFİS SAYFASI LOGO DÜZELTME
+   ============================================ */
+
+   body.page-sanalofis #logo img {
+    height: 90px !important;   /* diğer sayfalarla eşit */
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Scroll olsa bile logoyu küçültme */
+  body.page-sanalofis header.sticky #logo img {
+    height: 90px !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  /* ============================================
+   🌟 TÜM SAYFALARDA TEK TİP LOGO YAPISI
+   ============================================ */
+
+/* Masaüstü: logo büyük ve sabit */
+#logo img {
+  height: 90px !important;      /* Sanal ofis ile birebir aynı */
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.3s ease;
+}
+
+/* Scroll sonrası küçülmeyi kapat */
+header.sticky #logo img,
+header.header-white #logo img {
+  height: 90px !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Mobil görünüm: orantılı küçültme */
+@media (max-width: 992px) {
+  #logo img {
+    height: 75px !important;
+  }
+}
+/* ============================================
+   🌟 YENİ HAMBURGER MENÜ (SİYAH + BEYAZ)
+   ============================================ */
+
+/* --- 1️⃣ HAMBURGER BUTON --- */
+#menu-btn {
+  display: none;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+#menu-btn span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #000 !important; /* siyah çizgiler */
+  margin: 6px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* X animasyonu */
+#menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+#menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+#menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Açıkken siyah kalmaya devam etsin */
+#menu-btn.active span {
+  background: #000 !important;
+}
+
+/* --- 2️⃣ MENÜ GÖRÜNÜMÜ --- */
+@media (max-width: 992px) {
+  #menu-btn {
+    display: block;
+  }
+
+  #mainmenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+
+  /* #mainmenu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff; /* beyaz arka plan */
+    /* z-index: 9999;
+    opacity: 1;
+    transform: translateY(0);
+  } */ */
+
+  /* Menü linkleri */
+  #mainmenu li {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  #mainmenu li a {
+    color: #000 !important;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.25s ease;
+  }
+
+  #mainmenu li a:hover {
+    color: #ffbe00 !important; /* hover sarı */
+  }
+}
+/* ============================================
+   🌟 .btn-main.btn-oval.wow.fadeInUp.hover efekti
+   ============================================ */
+   .btn-main.btn-oval.wow.fadeInUp.animated {
+    background-color: #ffbe00;
+    color: #0f0f0f !important;
+    border: 2px solid #ffbe00;
+    border-radius: 50px;
+    padding: 14px 42px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
+  }
+  
+  /* Hover efekti */
+  .btn-main.btn-oval.wow.fadeInUp.animated:hover {
+    background-color: #0f0f0f !important;
+    color: #ffffff !important;
+    border-color: #0f0f0f;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  /* ===== MOBILE MENU OVERRIDE (animasyonlu & hızlı) ===== */
+@media (max-width: 992px) {
+  /* style.css'teki display:none'ı kesin olarak ez */
+  header #mainmenu {
+    position: fixed !important;
+    inset: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #fff !important;
+    z-index: 9999 !important;
+
+    /* animasyon başlangıç halleri */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(-16px) !important;
+    pointer-events: none !important;
+    transition: opacity .28s ease, transform .28s ease, visibility .28s ease !important;
+    will-change: opacity, transform;
+  }
+
+  /* Açık hali */
+  header #mainmenu.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
+
+  /* Linkler — başlangıç */
+  header #mainmenu li {
+    list-style: none !important;
+    margin: 14px 0 !important;
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+    transition: opacity .22s ease, transform .22s ease !important;
+  }
+
+  /* Açılınca sırayla aksın (stagger) */
+  header #mainmenu.open li { opacity: 1 !important; transform: translateY(0) !important; }
+  header #mainmenu.open li:nth-child(1) { transition-delay: .05s !important; }
+  header #mainmenu.open li:nth-child(2) { transition-delay: .10s !important; }
+  header #mainmenu.open li:nth-child(3) { transition-delay: .15s !important; }
+  header #mainmenu.open li:nth-child(4) { transition-delay: .20s !important; }
+  header #mainmenu.open li:nth-child(5) { transition-delay: .25s !important; }
+  header #mainmenu.open li:nth-child(6) { transition-delay: .30s !important; }
+  header #mainmenu.open li:nth-child(7) { transition-delay: .35s !important; }
+  header #mainmenu.open li:nth-child(8) { transition-delay: .40s !important; }
+
+  /* Link stili */
+  header #mainmenu li a {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    transition: color .2s ease !important;
+  }
+  header #mainmenu li a:hover { color: #ffbe00 !important; }
+
+  /* Kapatma butonu daha belirgin kalsın */
+  .menu-header { position: absolute !important; top: 18px !important; right: 20px !important; z-index: 10000 !important; }
+  #close-menu { background:none !important; border:none !important; font-size: 36px !important; cursor:pointer !important; }
+  #close-menu:hover { color: #ffbe00 !important; transform: scale(1.05); }
+}
+/* ✖️ Menü Kapatma Butonu (Responsive için) */
+#close-menu {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  font-weight: 300;
+  color: #000;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+/* Menü açıkken görünür */
+#mainmenu.open #close-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(0deg);
+}
+
+/* Hover efekti */
+#close-menu:hover {
+  color: #ffbe00;
+  transform: scale(1.1);
+}
+
+/* Sadece mobilde aktif */
+@media (max-width: 992px) {
+  #close-menu {
+    display: block;
+  }
 }
