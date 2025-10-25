@@ -1081,7 +1081,7 @@ body.page-sanalofis #navbar {
    /* Hero kısmı navbarın arkasına girmesin */
    body.page-sanalofis #section-hero,
    body.page-sanalofis #subheader {
-     margin-top: 90px !important; /* navbar yüksekliği kadar boşluk */
+     margin-top: 90px; /* navbar yüksekliği kadar boşluk */
    }
    
    /* Mobil görünümde navbar içeriği taşmasın */
@@ -1391,4 +1391,290 @@ header.header-white #logo img {
   #close-menu {
     display: block;
   }
+}
+/* 🟡 Hero görselini küçültme */
+.hero-image {
+  width: 65% !important;     /* istediğin orana göre: %40, %35 vs */
+  height: auto !important;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .hero-image {
+    width: 60% !important;   /* tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 75% !important;   /* mobil */
+  }
+}
+/* 🌟 Hero alanını yukarı daha yakınlaştır (responsive uyumlu) */
+#section-hero {
+  margin-top: -2rem !important;   /* masaüstü: yukarı yakın */
+}
+
+/* 🧩 Tablet görünümde biraz açalım */
+@media (max-width: 992px) {
+  #section-hero {
+    margin-top: 0 !important;     /* taşmayı engeller */
+  }
+}
+
+/* 📱 Mobilde tamamen sıfırla */
+@media (max-width: 768px) {
+  #section-hero {
+    margin-top: 1rem !important;  /* ufak boşluk */
+  }
+}
+/* 🌟 Avantajlar Görseli – Yumuşak Kenar + Gölge + Responsive */
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  /* box-shadow: 0 8px 30px rgba(0,0,0,0.15); */
+  transition: all 0.4s ease;
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  /* box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.25); */
+  pointer-events: none;
+}
+
+/* Görsel boyutunu küçült, genişliği dengeli tut */
+.custom-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 24px;
+  filter: brightness(1.02) contrast(1.05);
+  transition: all 0.4s ease;
+}
+
+/* Hover efekti: yumuşak büyüme ve gölge artışı */
+
+
+/* 📱 Responsive düzeltmeler */
+@media (max-width: 992px) {
+  .custom-image {
+    width: 90%;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-image {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+/* Hizmet Alanlarımız - Görsellerin eşit boyutlandırılması */
+#section-studio-type .de-image-text img {
+  width: 100%;
+  height: 320px; /* sabit yükseklik */
+  object-fit: cover; /* orantıyı koruyarak kırp */
+  border-radius: 20px; /* köşeleri yumuşat */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover efekti daha profesyonel görünüm için */
+#section-studio-type .de-image-text:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Responsive düzenleme (mobil için daha küçük boyut) */
+@media (max-width: 768px) {
+  #section-studio-type .de-image-text img {
+    height: 220px;
+  }
+}
+/* 🌟 Hizmet Alanlarımız Kart Tasarımı */
+#section-studio-type .de-image-text {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* 🖼 Görsellerin düzgün görünmesi */
+#section-studio-type .de-image-text img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px; /* üst köşeleri de yumuşatır */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* 🕶 Hover efekti */
+#section-studio-type .de-image-text:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+/* 📍 İçerik (yazılar) ortalı */
+#section-studio-type .de-image-text .d-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 90%;
+  padding: 0 10px;
+}
+
+/* 🖋 Yazılar kontrastlı ve ortalı */
+#section-studio-type .de-image-text h3,
+#section-studio-type .de-image-text p {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+/* 📱 Responsive düzenleme */
+@media (max-width: 992px) {
+  #section-studio-type .de-image-text {
+    margin-bottom: 24px;
+  }
+  #section-studio-type .de-image-text img {
+    height: 240px;
+  }
+  #section-studio-type .de-image-text .d-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/* 📱 Küçük ekranlar için ekstra boşluk */
+@media (max-width: 576px) {
+  #section-studio-type .de-image-text {
+    margin-bottom: 32px;
+  }
+  #section-studio-type .de-image-text img {
+    height: 220px;
+  }
+}
+#section-studio-type .de-image-text .d-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 90%;              /* yazı taşmasın diye */
+  padding: 40px 30px;      /* iç boşluk ekledik */
+  box-sizing: border-box;
+}
+
+/* Mobilde biraz daha dar padding */
+@media (max-width: 768px) {
+  #section-studio-type .de-image-text .d-text {
+    padding: 25px 20px;
+  }
+}
+/* 🌟 Neden EF - Fotoğraf Kolajı Geliştirme */
+.photo-grid-lg {
+  position: relative;
+  width: 100%;
+  max-width: 580px; /* biraz daha geniş alan */
+  height: 520px; /* yükseklik artırıldı */
+}
+
+/* 🔹 Tüm görseller için genel yapı */
+.photo-img-lg {
+  position: absolute;
+  border-radius: 26px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+/* Hover efekti */
+.photo-img-lg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 45px rgba(0,0,0,0.25);
+}
+
+/* 🎯 Görsel 1: En ön plandaki */
+.photo-img-lg.img-1 {
+  top: 0;
+  left: 30px; /* biraz daha sola */
+  width: 300px;
+  height: 240px;
+}
+
+/* 🎯 Görsel 2: Ortada ve daha geniş */
+.photo-img-lg.img-2 {
+  top: 200px;
+  right: 10px; /* kenara yaklaşsın */
+  width: 300px;
+  height: 220px;
+  z-index: 2;
+}
+
+/* 🎯 Görsel 3: En altta, daha büyük */
+.photo-img-lg.img-3 {
+  bottom: 0;
+  left: 80px;
+  width: 340px;
+  height: 240px;
+}
+
+/* 📱 Responsive düzen */
+@media (max-width: 768px) {
+  .photo-grid-lg {
+    height: 420px;
+    max-width: 100%;
+  }
+  .photo-img-lg.img-1 {
+    width: 240px;
+    height: 180px;
+    left: 20px;
+  }
+  .photo-img-lg.img-2 {
+    width: 220px;
+    height: 160px;
+    top: 160px;
+    right: 20px;
+  }
+  .photo-img-lg.img-3 {
+    width: 260px;
+    height: 180px;
+    bottom: 0;
+    left: 50px;
+  }
+}
+/* 🌟 Farkımız Ne? görsel kenar yumuşatma */
+img[alt="EF Sanal Ofis Görseli"] {
+  border-radius: 30px; /* köşeleri yumuşatır */
+  transition: all 0.3s ease;
+}
+
+/* Hover'da hafif efekt istersen */
+.social-icons a {
+  color: #000; /* siyah */
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icons a:hover {
+  color: #ffbe00; /* sarı hover */
+}
+
+.social-icons .phone-link {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.social-icons .phone-link:hover {
+  color: #ffbe00;
 }
