@@ -1149,7 +1149,7 @@ header .de-flex {
   
   /* Scroll olsa bile logoyu küçültme */
   body.page-sanalofis header.sticky #logo img {
-    height: 90px !important;
+    height: 130px !important;
     transform: none !important;
     opacity: 1 !important;
   }
