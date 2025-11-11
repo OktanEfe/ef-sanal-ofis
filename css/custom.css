@@ -659,6 +659,7 @@ h1, h2, h3, h4, h5 {
 /* 🔹 Hero içindeki görselin ve yazının nefes alması */
 #section-hero .container {
   padding-top: 40px;
+  background-color: white;
   padding-bottom: 40px;
 }
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://efsanalofis.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  
+  <url>
+    <loc>https://efsanalofis.com/sanalofis</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://efsanalofis.com/hakkimizda</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://efsanalofis.com/iletisim</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://efsanalofis.com/hizmet-politikasi</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://efsanalofis.com/cerez-politikasi</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://efsanalofis.com/gizlilik-politikasi</loc>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>

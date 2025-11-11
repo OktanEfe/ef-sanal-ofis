@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://efsanalofis.com/sitemap.xml
