@@ -1,4 +1,3 @@
-// js/mail.js
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact_form");
     const successEl = document.getElementById("mail_success");
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
   
       try {
-        const res = await fetch("/netlify/functions/sendMail", {
+        const res = await fetch("/.netlify/functions/sendMail", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
